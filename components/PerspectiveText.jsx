@@ -14,7 +14,9 @@ const PerspectiveText = ({
           {label}
         </p>
       </div>
-      <span className="inline-block relative z-20">{children}</span>
+      {children && (
+        <span className="inline-block relative z-20">{children}</span>
+      )}
     </div>
   );
 };

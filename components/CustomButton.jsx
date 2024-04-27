@@ -12,6 +12,7 @@ const CustomButton = ({
   hoverColor3 = "bg-gradient-to-r from-purple to-lightBlue",
   btnBgColor = "bg-gradient-to-r from-purple to-lightBlue",
   textColor = "text-white",
+  innerEleStyle,
   textLabel,
   ...attributes
 }) => {
@@ -24,12 +25,18 @@ const CustomButton = ({
       timeline.current
         .to(
           circle.current,
-          { top: "-130%", width: "150%", duration: 0.4, ease: "power3.in" },
+          {
+            top: "-145%",
+            width: "150%",
+            height: "170%",
+            duration: 0.4,
+            ease: "power3.in",
+          },
           "enter"
         )
         .to(
           circle.current,
-          { top: "-290%", width: "125%", duration: 0.4 },
+          { top: "-290%", width: "125%", height: "120%", duration: 0.4 },
           "exit"
         );
     }
@@ -59,7 +66,11 @@ const CustomButton = ({
       {...attributes}
     >
       {
-        <PerspectiveText label={textLabel} textColor={textColor}>
+        <PerspectiveText
+          label={textLabel}
+          textColor={textColor}
+          innerEleStyle={innerEleStyle}
+        >
           {children}
         </PerspectiveText>
       }

@@ -126,4 +126,8 @@ body {
   .main-container {
     @apply w-full sm:w-[576px] md:w-[740px] lg:w-[960px] xl:w-[1200px] 2xl:w-[1370px] mx-auto px-4 sm:px-0 py-3 2xl:px-0;
   }
+
+  .section-margin {
+    @apply mt-8 sm:mt-10 md:mt-12 lg:mt-14 xl:mt-16 2xl:mt-20;
+  }
 }

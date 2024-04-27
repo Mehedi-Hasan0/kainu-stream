@@ -28,7 +28,7 @@ export default function StreamingDetails() {
       <div className="flex items-center gap-5 mt-5 lg:mt-7 2xl:mt-9 mx-1">
         <div>
           <CustomButton
-            textLabel={"Watch videos"}
+            textLabel={"Watch Videos"}
             innerEleStyle={"flex-row-reverse"}
             hoverColor3="bg-[#322a42]"
           >
@@ -40,7 +40,7 @@ export default function StreamingDetails() {
 
         <div>
           <CustomButton
-            textLabel={"Learn more"}
+            textLabel={"Learn More"}
             innerEleStyle={"flex-row"}
             btnBgColor="bg-[#322a42]"
           >

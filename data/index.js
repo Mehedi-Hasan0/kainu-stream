@@ -12,3 +12,21 @@ export const bannerLogos = [
     label: "go cardless",
   },
 ];
+
+export const featuresBtn = [
+  {
+    label: "Earn Reqards",
+  },
+  {
+    label: "Gaming Tournament",
+  },
+  {
+    label: "Live Collections",
+  },
+  {
+    label: "Live Streaming",
+  },
+  {
+    label: "Crypto Collections",
+  },
+];

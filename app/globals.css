@@ -6,6 +6,7 @@ body {
   box-sizing: border-box;
   background-color: #0f0c25;
   color: #fefefe;
+  overflow-x: hidden;
 }
 
 @media (min-width: 1800px) {
@@ -56,6 +57,31 @@ body {
       }
     }
   }
+}
+
+/* custom scroll bar */
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: #1d1d1f;
+}
+
+/* Custom scrollbar thumb */
+body::-webkit-scrollbar-thumb {
+  background-color: #a374ff;
+  border-radius: 4px;
+}
+
+/* hide scroll container */
+.hide-scroll-container {
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  white-space: nowrap; /* Prevent wrapping of content */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scroll-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
 }
 
 @layer base {

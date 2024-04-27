@@ -1,6 +1,11 @@
-const PerspectiveText = ({ children, label, textColor }) => {
+const PerspectiveText = ({
+  children,
+  label,
+  textColor,
+  innerEleStyle = "flex-row",
+}) => {
   return (
-    <div className="flex flex-row items-center gap-2">
+    <div className={`flex items-center gap-2 2xl:gap-3 ${innerEleStyle}`}>
       <div className={`perspectiveText z-10 ${textColor}`}>
         <p className="relative z-[5] font-semibold 2xl:text-[20px] whitespace-nowrap">
           {label}

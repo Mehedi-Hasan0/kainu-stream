@@ -30,3 +30,18 @@ export const featuresBtn = [
     label: "Crypto Collections",
   },
 ];
+
+export const featuresCard = [
+  {
+    imgUrl: "/assets/images/feature-img-1.webp",
+    heading: "Your",
+    coloredHeading: "Profile",
+    desc: "We’ve set on the path to make a gamer’s dream come true an advanced Social Gaming Platform",
+  },
+  {
+    imgUrl: "/assets/images/feature-img-2.webp",
+    heading: "Collections",
+    coloredHeading: "NFT",
+    desc: "We’ve set on the path to make a gamer’s dream come true an advanced Social Gaming Platform",
+  },
+];

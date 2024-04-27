@@ -1,6 +1,7 @@
 import { Inter, Poppins, Urbanist } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
+import Navbar from "@/components/shared/Nav/Navbar";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${berlinSans.variable} ${urbanist.variable} ${poppins.variable}`}
       >
+        <Navbar />
         {children}
       </body>
     </html>

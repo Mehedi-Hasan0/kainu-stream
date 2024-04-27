@@ -8,6 +8,56 @@ body {
   color: #fefefe;
 }
 
+@media (min-width: 1800px) {
+  .max-screen-width {
+    width: 1640px;
+    padding-inline: 0;
+  }
+}
+
+.perspectiveText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.61, 1, 0.88, 1);
+
+  p {
+    transition: all 0.4s cubic-bezier(0.61, 1, 0.88, 1);
+    pointer-events: none;
+
+    &:nth-of-type(2) {
+      position: absolute;
+      transform-origin: bottom center;
+      transform: rotateX(-90deg) translateY(13px);
+      opacity: 0;
+    }
+  }
+}
+
+.customButton {
+  &:hover {
+    .perspectiveText {
+      transform: rotateX(90deg);
+
+      p {
+        &:nth-of-type(1) {
+          transform: translateY(-100%);
+          transition: all 0.4s cubic-bezier(0.61, 1, 0.88, 1);
+          opacity: 0;
+        }
+
+        &:nth-of-type(2) {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -69,5 +119,11 @@ body {
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer {
+  .main-container {
+    @apply w-full sm:w-[576px] md:w-[740px] lg:w-[960px] xl:w-[1200px] 2xl:w-[1370px] mx-auto px-4 sm:px-0 py-3 2xl:px-0;
   }
 }

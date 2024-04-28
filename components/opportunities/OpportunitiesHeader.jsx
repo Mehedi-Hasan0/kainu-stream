@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function OpportunitiesHeader() {
   return (
-    <div className="main-container max-screen-width 2xl:px-20 flex flex-col md:flex-row gap-10 justify-between md:items-center lg:items-start">
+    <div className="main-container max-screen-width 2xl:px-20 flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-10 justify-between md:items-center lg:items-start">
       <h2 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-berlin uppercase">
         Earning <br /> Opportunities <br />
         <span className=" text-purple">With Kainu...</span>

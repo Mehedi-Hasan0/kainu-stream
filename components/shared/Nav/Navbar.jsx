@@ -5,7 +5,7 @@ import logo from "../../../public/assets/images/logo.svg";
 import NavLinks from "./NavLinks";
 import CustomButton from "@/components/CustomButton";
 import { Cross as Hamburger } from "hamburger-react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useScrollLock } from "@/hooks/useScrollLock";
 import { AnimatePresence } from "framer-motion";
 import NavOptons from "./NavOptons";
@@ -14,6 +14,8 @@ import Link from "next/link";
 
 export default function Navbar() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const [navHeight, setNavHeight] = useState(0);
+  const headerRef = useRef(null);
 
   const [menuIconSize, setmenuIconSize] = useState(
     typeof window !== "undefined" && window.innerWidth < 768
@@ -36,6 +38,21 @@ export default function Navbar() {
     }
   }, [mobileNavOpen]);
 
+  // storing scroll Y value to conditionally show nav button & animate element
+  useEffect(() => {
+    function handleScroll() {
+      if (headerRef.current) {
+        setNavHeight(window.scrollY);
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const navBtn = {
     initial: {
       opacity: 1,
@@ -57,7 +74,14 @@ export default function Navbar() {
   };
 
   return (
-    <header className=" absolute top-0 left-0 w-full z-50 py-2 2xl:py-6">
+    <header
+      ref={headerRef}
+      className={` top-0 left-0 w-full z-50 py-2 2xl:py-6 ${
+        navHeight > 100
+          ? "fixed bg-darkBlue animate-fade-in border-b border-gray-700"
+          : "absolute"
+      }`}
+    >
       <nav className="main-container max-screen-width flex items-center justify-between gap-10">
         {/* logo / to show log in the mobile menu set "relative z-20" /*/}
         <Link href={"/"}>

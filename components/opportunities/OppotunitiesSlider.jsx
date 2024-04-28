@@ -11,6 +11,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 import { opportunitySlider } from "@/data";
+import CarouselSkeleton from "../shared/CarouselSkeleton";
 
 const OppotunitiesSlider = () => {
   const [innerWidth, setInnerWidth] = useState(
@@ -47,7 +48,7 @@ const OppotunitiesSlider = () => {
   }, []);
 
   if (!swiperLoaded) {
-    return null; // loading state
+    return <CarouselSkeleton />; // loading state
   }
 
   return (

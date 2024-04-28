@@ -84,6 +84,13 @@ body::-webkit-scrollbar-thumb {
   display: none; /* Hide scrollbar for WebKit browsers */
 }
 
+/* swiper custom btn color */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: white;
+  opacity: 0.8;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

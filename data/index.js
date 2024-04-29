@@ -86,3 +86,27 @@ export const opportunitySlider = [
     labelDesc: "rate 50%",
   },
 ];
+
+export const tournamentsCard = [
+  {
+    heading: "Popular Stram",
+    desc1: "Join the hype on our gaming",
+    desc2:
+      "Platform with popular streams. Engage with charismatic personalities, witness epic gameplay, and connect with a vibrant community.",
+    btnLabel: "Start playing",
+  },
+  {
+    heading: "Tournament record",
+    desc1: "Join the hype on our gaming",
+    desc2:
+      "Platform with popular streams. Engage with charismatic personalities, witness epic gameplay, and connect with a vibrant community.",
+    btnLabel: "Start playing",
+  },
+  {
+    heading: "Chatting with others",
+    desc1: "Join the hype on our gaming",
+    desc2:
+      "Platform with popular streams. Engage with charismatic personalities, witness epic gameplay, and connect with a vibrant community.",
+    btnLabel: "Start playing",
+  },
+];

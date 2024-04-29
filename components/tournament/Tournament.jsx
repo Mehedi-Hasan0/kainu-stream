@@ -32,7 +32,7 @@ export default function Tournament() {
           </div>
         </div>
         {/* right side card */}
-        <div className="flex-1 xl:flex-auto flex flex-row w-fit">
+        <div className="flex-1 xl:flex-initial flex flex-row w-fit">
           <div className="h-full w-[6px] bg-gradient-to-b from-purple to-[#120d25]  rounded-lg hidden md:block" />
           <div className="flex flex-col items-center gap-7 lg:gap-10 xl:gap-16">
             {tournamentsCard.map((card) => (

@@ -5,7 +5,7 @@ import OppotunitiesSlider from "./OppotunitiesSlider";
 export default function Opportunities() {
   return (
     <section className=" bg-[#0d0a1e] overflow-hidden">
-      <div className="section-margin flex flex-col gap-8 md:gap-12 xl:gap-16">
+      <div className="section-margin flex flex-col gap-2 sm:gap-8 md:gap-12 xl:gap-16">
         <OpportunitiesHeader />
         <OpportunitiesCard />
         <OppotunitiesSlider />

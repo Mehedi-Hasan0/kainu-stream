@@ -25,8 +25,6 @@ export default function Navbar() {
       : 24
   );
 
-  console.log(mobileNavOpen, "mobile menu");
-
   const { lockScroll, unlockScroll } = useScrollLock();
 
   // when mobile menu is open disabling scroll

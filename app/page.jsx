@@ -1,3 +1,4 @@
+import Bookapp from "@/components/Bookapp";
 import PlatForm from "@/components/PlatForm";
 import SocialMediaGaming from "@/components/SocialMediaGaming";
 import Banner from "@/components/banner/Banner";
@@ -14,6 +15,7 @@ export default function Home() {
       <Opportunities />
       <Tournament />
       <PlatForm />
+      <Bookapp />
     </main>
   );
 }

@@ -1,4 +1,5 @@
 import Bookapp from "@/components/Bookapp";
+import DiveIn from "@/components/DiveIn.jsx/DiveIn";
 import PlatForm from "@/components/PlatForm";
 import SocialMediaGaming from "@/components/SocialMediaGaming";
 import Banner from "@/components/banner/Banner";
@@ -16,6 +17,7 @@ export default function Home() {
       <Tournament />
       <PlatForm />
       <Bookapp />
+      <DiveIn />
     </main>
   );
 }

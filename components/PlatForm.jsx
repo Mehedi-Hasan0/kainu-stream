@@ -1,17 +1,19 @@
-import { tournamentsCard } from "@/data";
+import { platFormCards, tournamentsCard } from "@/data";
 import Image from "next/image";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-export default function Tournament() {
+export default function PlatForm() {
   return (
-    <section className="bg-[url('/assets/images/cpre-tournament-bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden">
+    <section className="bg-[url('/assets/images/features-platform-bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden">
       <div className="main-container max-screen-width section-margin flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12 xl:gap-20 justify-center">
         {/* left side text */}
-        <div className="flex flex-col gap-6 md:gap-6 2xl:gap-8">
+        <div className="flex flex-col gap-6 md:gap-6 2xl:gap-16">
           <div className="flex flex-col gap-3 lg:gap-5 xl:gap-7">
             <h2 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-berlin uppercase">
-              Cpre <br /> Features of <br />
-              <span className=" text-purple">Tournament...</span>
+              Features of <br />
+              <span className="text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-purple">
+                platform...
+              </span>
             </h2>
             <p className="text-xs xl:text-sm 2xl:text-xl font-poppins text-gray-400 sm:w-[320px] lg:w-[400px] xl:w-[510px] 2xl:w-[600px]">
               We’ve set on the path to make a gamer’s dream come true by
@@ -21,13 +23,13 @@ export default function Tournament() {
           </div>
 
           {/* nft character with mobile */}
-          <div className="md:justify-end flex">
+          <div className="flex justify-center">
             <Image
-              src={"/assets/images/kainu-ch-2.webp"}
+              src={"/assets/images/bit-coin.webp"}
               alt="Kainu character with mobile"
-              width={400}
-              height={550}
-              className="w-[240px] sm:w-[180px] md:w-[150px] lg:w-[190px] xl:w-[220px] 2xl:w-[300px] mx-auto md:mx-0"
+              width={600}
+              height={200}
+              className="w-[300px] h-[150px] md:w-[600px] md:h-[300px] object-cover"
             />
           </div>
         </div>
@@ -35,17 +37,33 @@ export default function Tournament() {
         <div className="flex-1 xl:flex-initial flex flex-row w-fit">
           <div className="h-full w-[6px] bg-gradient-to-b from-purple to-[#120d25]  rounded-lg hidden md:block" />
           <div className="flex flex-col items-center gap-7 lg:gap-10 xl:gap-16">
-            {tournamentsCard.map((card) => (
+            {platFormCards.map((card, i) => (
               <div
                 key={card.heading}
-                className="flex items-center gap-5 lg:gap-10 xl:gap-20 font-poppins group"
+                className="flex gap-5 lg:gap-10 xl:gap-20 font-poppins group md:-ml-8 2xl:-ml-10 relative z-20"
               >
                 {/* hover indicator */}
-                <div className="w-0 h-0 border-t-[16px] border-t-transparent border-b-[16px] border-b-transparent border-l-[16px] border-l-purple opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out hidden md:block" />
+                <div
+                  className={`w-44 h-16 xl:w-36 xl:h-16 2xl:w-20 2xl:h-20 rounded-full bg-[#0e0a22] border-2 border-purple justify-center items-center hidden md:flex ${
+                    i === 2
+                      ? "border-opacity-40"
+                      : i === 3
+                      ? "border-opacity-30"
+                      : "border-opacity-100"
+                  }`}
+                >
+                  <Image
+                    src={card.labelImg}
+                    alt=""
+                    width={60}
+                    height={60}
+                    className="w-8 2xl:w-9"
+                  />
+                </div>
                 {/* hover indicator ☝️ */}
                 {/* original card 👇 */}
                 <div className="bg-gradient-to-r group-hover:from-purple group-hover:to-darkBlue 2xl:w-[600px] 2xl:h-[328px] flex justify-center items-center rounded-md cursor-pointer transition-all duration-500 ease-in-out">
-                  <div className="bg-darkBlue p-6 lg:p-8 xl:p-12 flex flex-col gap-3 lg:gap-4 rounded-md 2xl:w-[598px] 2xl:h-[326px]">
+                  <div className="bg-[#0e0a22] p-6 lg:p-8 xl:p-12 flex flex-col gap-3 lg:gap-4 rounded-md 2xl:w-[598px] 2xl:h-[326px] border border-gray-800 group-hover:border-transparent">
                     {/* heading */}
                     <h3 className="uppercase text-xl lg:text-2xl xl:text-3xl font-bold">
                       {card.heading}

@@ -110,3 +110,30 @@ export const tournamentsCard = [
     btnLabel: "Start playing",
   },
 ];
+
+export const platFormCards = [
+  {
+    heading: "Ad revenue generation",
+    labelImg: "/assets/icons/sale.svg",
+    desc1: "Join the hype on our gaming",
+    desc2:
+      "Platform with popular streams. Engage with charismatic personalities, witness epic gameplay, and connect with a vibrant community.",
+    btnLabel: "Start playing",
+  },
+  {
+    heading: "Game & key sales",
+    labelImg: "/assets/icons/game-promotion.svg",
+    desc1: "Join the hype on our gaming",
+    desc2:
+      "Platform with popular streams. Engage with charismatic personalities, witness epic gameplay, and connect with a vibrant community.",
+    btnLabel: "Start playing",
+  },
+  {
+    heading: "Popular stream",
+    labelImg: "/assets/icons/more-earning.svg",
+    desc1: "Join the hype on our gaming",
+    desc2:
+      "Platform with popular streams. Engage with charismatic personalities, witness epic gameplay, and connect with a vibrant community.",
+    btnLabel: "Start playing",
+  },
+];

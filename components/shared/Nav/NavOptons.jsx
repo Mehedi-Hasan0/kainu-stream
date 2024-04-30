@@ -83,7 +83,7 @@ const NavOptons = () => {
                 <Link
                   key={i + 1}
                   href={link.path}
-                  className={`flex items-center px-8 sm:px-10 text-3xl sm:text-5xl font-bold hover:text-purple transition-colors duration-500 ease-in-out w-fit ${
+                  className={`flex items-center px-4 sm:px-10 text-5xl sm:text-5xl font-bold hover:text-purple transition-colors duration-500 ease-in-out w-fit ${
                     pathName === link.path && "text-purple"
                   }`}
                 >

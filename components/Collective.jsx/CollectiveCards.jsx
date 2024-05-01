@@ -1,7 +1,22 @@
+"use client";
+
 import { collectiveCard } from "@/data";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { useRef, useState } from "react";
+import { FaLongArrowAltRight, FaPlay } from "react-icons/fa";
 
 export default function CollectiveCards() {
+  const videoRef = useRef(null);
+  const [showPlayBtn, setShowPlayBtn] = useState(true);
+
+  const handleVideoPlay = () => {
+    if (videoRef.current.paused) {
+      videoRef.current.play();
+      setShowPlayBtn(false);
+    } else {
+      videoRef.current.pause();
+      setShowPlayBtn(true);
+    }
+  };
   return (
     <div className="flex flex-col md:flex-row gap-7 sm:gap-9 md:gap-10 lg:gap-12 xl:gap-14 2xl:gap-16">
       <div className="flex-1 flex flex-row w-fit">
@@ -39,16 +54,25 @@ export default function CollectiveCards() {
         </div>
       </div>
       {/* right side content */}
-      <div className="flex-1">
+      <div className="flex-1 relative md:h-[400px] lg:min-h-[500px] xl:min-h-[620px] 2xl:min-h-[595px] md:object-cover flex justify-center items-center">
         <video
+          ref={videoRef}
+          onClick={handleVideoPlay}
           src="http://res.cloudinary.com/dlhexsnxq/video/upload/v1709961388/bannerbg_xgkahv.mp4"
-          //   width="100%"
-          //   height="100%"
-          autoPlay
+          poster="/assets/images/videoPoste.png"
           loop
           muted
-          className="md:h-[400px] lg:min-h-[500px] xl:min-h-[620px] 2xl:min-h-[595px] md:object-cover"
+          className="h-[300px] md:h-[400px] lg:min-h-[500px] xl:min-h-[620px] 2xl:min-h-[595px] object-cover"
         />
+
+        <div
+          onClick={handleVideoPlay}
+          className={`absolute w-16 h-16 2xl:w-20 2xl:h-20 rounded-full bg-purple flex justify-center items-center ${
+            showPlayBtn ? "block" : "hidden"
+          }`}
+        >
+          <FaPlay size={18} className="ml-1" />
+        </div>
       </div>
     </div>
   );

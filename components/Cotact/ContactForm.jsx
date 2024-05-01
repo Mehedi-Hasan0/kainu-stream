@@ -51,8 +51,8 @@ export default function ContactForm() {
 
       {/* right side */}
       <div className="flex justify-center items-center border-2 border-darkBlue md:border-none md:bg-gradient-to-r from-[#110e21] to-purple rounded-xl flex-1">
-        <div className="flex flex-col gap-6 contact-left-card bg-[#110e21] px-6 py-7 md:px-10 md:py-12 xl:px-14 xl:py-16 rounded-xl">
-          <div className="flex items-center gap-7 justify-between">
+        <div className="flex flex-col gap-6 contact-left-card bg-[#110e21] px-6 py-7 md:px-10 md:py-12 xl:px-14 xl:py-16 rounded-xl w-full">
+          <div className="flex flex-col md:flex-row items-center gap-5 md:gap-7 justify-between">
             <input
               type="text"
               placeholder="Name*"

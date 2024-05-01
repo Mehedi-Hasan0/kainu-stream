@@ -155,3 +155,18 @@ export const bookCards = [
     desc: "We’ve set on the path make gamer’s Social Gaming Platrm",
   },
 ];
+
+export const collectiveCard = [
+  {
+    heading: "Play rewards",
+    desc2:
+      "Platform with popular streams. Engage with charismatic personalities, witness epic gameplay, and connect with a vibrant community.",
+    btnLabel: "Start playing",
+  },
+  {
+    heading: "Strategic support",
+    desc2:
+      "Platform with popular streams. Engage with charismatic personalities, witness epic gameplay, and connect with a vibrant community.",
+    btnLabel: "Start playing",
+  },
+];

@@ -1,4 +1,5 @@
 import Bookapp from "@/components/Bookapp";
+import Collective from "@/components/Collective.jsx/Collective";
 import DiveIn from "@/components/DiveIn.jsx/DiveIn";
 import PlatForm from "@/components/PlatForm";
 import SocialMediaGaming from "@/components/SocialMediaGaming";
@@ -18,6 +19,7 @@ export default function Home() {
       <PlatForm />
       <Bookapp />
       <DiveIn />
+      <Collective />
     </main>
   );
 }

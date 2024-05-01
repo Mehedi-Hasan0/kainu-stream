@@ -62,7 +62,7 @@ export default function CollectiveCards() {
           poster="/assets/images/videoPoste.png"
           loop
           muted
-          className="h-[300px] md:h-[400px] lg:min-h-[500px] xl:min-h-[620px] 2xl:min-h-[595px] object-cover"
+          className="h-[300px] md:h-[400px] lg:min-h-[500px] xl:min-h-[620px] 2xl:min-h-[595px] object-cover rounded-md md:rounded-lg"
         />
 
         <div

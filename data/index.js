@@ -170,3 +170,21 @@ export const collectiveCard = [
     btnLabel: "Start playing",
   },
 ];
+
+export const multiChainCards = [
+  {
+    img: "/assets/icons/miltichain-card-icon-1.svg",
+    heading: "Users Can Engage",
+    desc: "Our reward syste uploding their profile, participating in tourna-ments, and staying active the platform.",
+  },
+  {
+    img: "/assets/icons/miltichain-card-icon-1.svg",
+    heading: "Contribute to Total",
+    desc: "Our reward syste uploding their profile, participating in tourna-ments, and staying active the platform.",
+  },
+  {
+    img: "/assets/icons/multichain-card-icon-2.png",
+    heading: "Play a Key Role",
+    desc: "Our reward syste uploding their profile, participating in tourna-ments, and staying active the platform.",
+  },
+];

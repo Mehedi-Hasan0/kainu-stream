@@ -1,5 +1,6 @@
 import Bookapp from "@/components/Bookapp";
 import Collective from "@/components/Collective.jsx/Collective";
+import Contactus from "@/components/Cotact/Contactus";
 import DiveIn from "@/components/DiveIn.jsx/DiveIn";
 import Multichain from "@/components/Multichain";
 import PlatForm from "@/components/PlatForm";
@@ -22,6 +23,7 @@ export default function Home() {
       <DiveIn />
       <Collective />
       <Multichain />
+      <Contactus />
     </main>
   );
 }

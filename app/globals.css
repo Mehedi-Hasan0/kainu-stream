@@ -20,6 +20,13 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .contact-left-card {
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
+  }
+}
+
 .perspectiveText {
   display: flex;
   flex-direction: column;

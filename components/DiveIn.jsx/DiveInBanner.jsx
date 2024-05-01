@@ -3,10 +3,10 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 export default function DiveInBanner() {
   return (
-    <div className="md:bg-darkBlue md:rounded-md overflow-hidden">
-      <div className="flex flex-col md:flex-row items-center md:px-8 md:pt-10 xl:px-12 xl:pt-12 gap-7 md:gap-10 justify-between relative">
+    <div className=" md:rounded-md overflow-hidden">
+      <div className="flex flex-col md:flex-row items-center  gap-7 md:gap-10 justify-between relative">
         {/* left side */}
-        <div className="flex flex-col gap-3 md:gap-6 md:w-[400px] 2xl:w-[500px] relative bg-darkBlue md:bg-transparent px-6 pt-6 md:px-0 md:pt-0 rounded-md md:rounded-none">
+        <div className="flex flex-col gap-3 w-full md:gap-6  relative bg-darkBlue px-6 pt-6 md:px-8 md:pt-10 xl:px-12 xl:pt-12 rounded-md md:rounded-none">
           <h3 className="text-2xl xl:text-3xl 2xl:text-4xl font-urbanist font-extrabold text-gray-300">
             Collaborate with TON
           </h3>
@@ -43,7 +43,7 @@ export default function DiveInBanner() {
         /> */}
         {/* </div> */}
         {/* right side */}
-        <div className="flex flex-col gap-3 md:gap-6 md:w-[400px] 2xl:w-[500px] relative bg-darkBlue md:bg-transparent px-6 pt-6 md:px-0 md:pt-0 rounded-md md:rounded-none">
+        <div className="flex flex-col gap-3 w-full md:gap-6  relative bg-darkBlue px-6 pt-6 md:px-8 md:pt-10 xl:px-12 xl:pt-12 rounded-md md:rounded-none">
           <h3 className="text-2xl xl:text-3xl 2xl:text-4xl font-urbanist font-extrabold text-gray-300">
             Collaborate with TON
           </h3>

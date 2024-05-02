@@ -22,7 +22,7 @@ export default function Download() {
           {/* download btn */}
           <div className="flex flex-row gap-6 sm:px-6 pb-7 md:px-9 md:pb-12 xl:px-14 xl:pb-16">
             <div className="flex flex-row items-center gap-5 mt-5 lg:mt-7 2xl:mt-9 mx-1">
-              <div className="font-poppins flex gap-3 items-center text-white bg-gradient-to-r from-purple to-lightBlue rounded-xl px-4 sm:px-4 py-1 lg:px-3 md:py-3 xl:px-5 xl:py-4">
+              <div className="font-poppins flex gap-3 items-center text-white bg-gradient-to-r from-purple to-lightBlue rounded-xl px-4 sm:px-4 py-1 lg:px-3 md:py-3 xl:px-5 xl:py-4 cursor-pointer">
                 <FaApple
                   size={48}
                   color="#ffffff"
@@ -37,7 +37,7 @@ export default function Download() {
                   </p>
                 </div>
               </div>
-              <div className="font-poppins flex gap-3 items-center text-white bg-[#342842] rounded-xl px-4 sm:px-4 py-1 lg:px-3 md:py-3 xl:px-5 xl:py-4">
+              <div className="font-poppins flex gap-3 items-center text-white bg-[#342842] rounded-xl px-4 sm:px-4 py-1 lg:px-3 md:py-3 xl:px-5 xl:py-4 cursor-pointer">
                 <FaGooglePlay
                   size={48}
                   color="#ffffff"

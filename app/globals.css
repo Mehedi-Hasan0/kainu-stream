@@ -9,6 +9,13 @@ body {
   overflow-x: hidden;
 }
 
+@media (min-width: 1920px) {
+  .max-page-screen {
+    width: 1920px;
+    margin-inline: auto;
+  }
+}
+
 @media (min-width: 1800px) {
   .max-screen-width {
     width: 1640px;

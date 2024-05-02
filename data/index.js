@@ -188,3 +188,23 @@ export const multiChainCards = [
     desc: "Our reward syste uploding their profile, participating in tourna-ments, and staying active the platform.",
   },
 ];
+
+export const footerLink = {
+  quickLink: ["Home", "About Us", "Tournament", "App Download"],
+  needHelp: ["Contact Us", "Discord", "Twitter", "Facebook"],
+};
+
+export const footerPost = [
+  {
+    img: "/assets/images/post-1.webp",
+    date: "19 May 2023",
+    title: "Every video game",
+    desc: "release soon",
+  },
+  {
+    img: "/assets/images/post-2.webp",
+    date: "19 May 2023",
+    title: "Monster hunter rise:",
+    desc: "sunbreak bug",
+  },
+];

@@ -1,4 +1,5 @@
 import FooterLinks from "./FooterLinks";
+import FooterSocialLink from "./FooterSocialLink";
 
 export default function Footer() {
   return (
@@ -6,6 +7,7 @@ export default function Footer() {
       <div className="main-container max-screen-width section-margin">
         <FooterLinks />
       </div>
+      <FooterSocialLink />
     </footer>
   );
 }

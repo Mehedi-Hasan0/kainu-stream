@@ -35,7 +35,7 @@ export default function FooterLinks() {
             <Link
               href={"/"}
               key={link}
-              className="text-gray-400 font-poppins font-medium text-base xl:text-lg"
+              className="text-gray-400 hover:text-purple transition duration-300 ease-in-out font-poppins font-medium text-base xl:text-lg"
             >
               {link}
             </Link>
@@ -52,7 +52,7 @@ export default function FooterLinks() {
             <Link
               href={"/"}
               key={link}
-              className="text-gray-400 font-poppins font-medium text-base xl:text-lg"
+              className="text-gray-400 hover:text-purple transition duration-300 ease-in-out font-poppins font-medium text-base xl:text-lg"
             >
               {link}
             </Link>

@@ -23,9 +23,14 @@ export default function SocialMediaGaming() {
             <span className="text-purple">Web2 and Web3</span> Users.
           </p>
           <p className="text-xs xl:text-sm 2xl:text-base font-poppins text-gray-400">
-            We’ve set on the path to make a gamer’s dream come true by offering
+            {/* We’ve set on the path to make a gamer’s dream come true by offering
             an advanced Social Media Gaming Platform catering to both web2 and
-            web3 users. Kainu Platform is a dream destination.
+            web3 users. Kainu Platform is a dream destination. */}
+            We’ve set on the path to make a gamer’s dream come true by offering
+            an advanced Social Media Gaming Platform, Live Stream, Tournaments,
+            eSports, NFT Marketplace, Web2 Marketplace, Gathering, Matches,
+            finding a Team, Messanger, Game Launcher, Browser Games, Fanpage of
+            Games, Groups, Supporting Games to attract gamers and much more.
           </p>
 
           {/* btn */}

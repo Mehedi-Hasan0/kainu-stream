@@ -44,8 +44,7 @@ export default function FooterSocialLink() {
             >
               <FaFacebook
                 size={44}
-                className="w-5 md:w-6 xl:w-8"
-                color="#888594"
+                className="w-5 md:w-6 xl:w-8 text-[#888594] hover:text-purple transition duration-300 ease-in-out"
               />
             </Link>
             <Link
@@ -55,8 +54,7 @@ export default function FooterSocialLink() {
             >
               <FaXTwitter
                 size={44}
-                className="w-5 md:w-6 xl:w-8"
-                color="#888594"
+                className="w-5 md:w-6 xl:w-8 text-[#888594] hover:text-purple transition duration-300 ease-in-out"
               />
             </Link>
             <Link
@@ -66,8 +64,7 @@ export default function FooterSocialLink() {
             >
               <FaYoutube
                 size={44}
-                className="w-5 md:w-6 xl:w-8"
-                color="#888594"
+                className="w-5 md:w-6 xl:w-8 text-[#888594] hover:text-purple transition duration-300 ease-in-out"
               />
             </Link>
             <Link
@@ -77,8 +74,7 @@ export default function FooterSocialLink() {
             >
               <AiFillInstagram
                 size={44}
-                className="w-5 md:w-6 xl:w-8"
-                color="#888594"
+                className="w-5 md:w-6 xl:w-8 text-[#888594] hover:text-purple transition duration-300 ease-in-out"
               />
             </Link>
             <Link
@@ -88,8 +84,7 @@ export default function FooterSocialLink() {
             >
               <IoLogoDiscord
                 size={44}
-                className="w-5 md:w-6 xl:w-8"
-                color="#888594"
+                className="w-5 md:w-6 xl:w-8 text-[#888594] hover:text-purple transition duration-300 ease-in-out"
               />
             </Link>
           </div>
@@ -101,19 +96,19 @@ export default function FooterSocialLink() {
           <div className="flex items-center gap-8">
             <Link
               href={"/"}
-              className="text-gray-500 font-poppins text-xs md:text-sm lg:text-base xl:text-xl font-semibold tracking-wide"
+              className="text-gray-500 hover:text-purple transition duration-300 ease-in-out font-poppins text-xs md:text-sm lg:text-base xl:text-xl font-semibold tracking-wide"
             >
               Privacy
             </Link>
             <Link
               href={"/"}
-              className="text-gray-500 font-poppins text-xs md:text-sm lg:text-base xl:text-xl font-semibold tracking-wide"
+              className="text-gray-500 hover:text-purple transition duration-300 ease-in-out font-poppins text-xs md:text-sm lg:text-base xl:text-xl font-semibold tracking-wide"
             >
               Terms of Service
             </Link>
             <Link
               href={"/"}
-              className="text-gray-500 font-poppins text-xs md:text-sm lg:text-base xl:text-xl font-semibold tracking-wide"
+              className="text-gray-500 hover:text-purple transition duration-300 ease-in-out font-poppins text-xs md:text-sm lg:text-base xl:text-xl font-semibold tracking-wide"
             >
               Cookies Policy
             </Link>

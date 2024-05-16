@@ -36,13 +36,14 @@ export const featuresCard = [
     imgUrl: "/assets/images/feature-img-1.webp",
     heading: "Your",
     coloredHeading: "Profile",
-    desc: "We’ve set on the path to make a gamer’s dream come true an advanced Social Gaming Platform",
+    // desc: "We’ve set on the path to make a gamer’s dream come true an advanced Social Gaming Platform",
+    desc: "A powerful Gaming Plattform for Gamers, Publishers and Games to connect everyone in one place in web2 and Web3. WIth reward system and more.",
   },
   {
     imgUrl: "/assets/images/feature-img-2.webp",
     heading: "Collections",
     coloredHeading: "NFT",
-    desc: "We’ve set on the path to make a gamer’s dream come true an advanced Social Gaming Platform",
+    desc: "A powerful Gaming Plattform for Gamers, Publishers and Games to connect everyone in one place in web2 and Web3. WIth reward system and more.",
   },
 ];
 

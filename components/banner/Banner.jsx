@@ -1,4 +1,4 @@
-import Image from "next/image";
+import BannerImg from "./BannerImg";
 import StreamingDetails from "./StreamingDetails";
 
 export default function Banner() {
@@ -10,15 +10,7 @@ export default function Banner() {
           <StreamingDetails />
         </div>
         {/* right side */}
-        <div className="flex-1 flex justify-end relative -mt-0 md:-mt-6 lg:-mt-36 xl:-mt-20 h-fit">
-          <Image
-            src={"/assets/images/banner-mobile.webp"}
-            alt="Mobile screen website of kainu"
-            width={600}
-            height={600}
-            className="w-[800px] h-[300px] lg:h-[600px] object-contain"
-          />
-        </div>
+        <BannerImg />
       </div>
     </section>
   );

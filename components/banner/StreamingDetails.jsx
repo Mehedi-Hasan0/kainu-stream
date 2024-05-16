@@ -1,12 +1,22 @@
+"use client";
+
 import { FaPlay } from "react-icons/fa";
 import CustomButton from "../CustomButton";
 import NormalButton from "../ui/NormalButton";
 import { bannerLogos } from "@/data";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { bannerTextVariant } from "../shared/anim";
 
 export default function StreamingDetails() {
   return (
-    <div className="flex flex-col gap-2">
+    <motion.div
+      variants={bannerTextVariant}
+      initial="initial"
+      whileInView={"enter"}
+      viewport={{ once: true }}
+      className="flex flex-col gap-2"
+    >
       <div className="bg-gradient-to-r from-[#3f1757] to-transparent w-fit px-3 py-1 xl:px-4 xl:py-2 rounded-md">
         <p className="uppercase text-purple font-bold text-xs md:text-sm xl:text-lg">
           Live Kainu
@@ -65,6 +75,6 @@ export default function StreamingDetails() {
           />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -3,6 +3,8 @@
 import { collectiveCard } from "@/data";
 import { useRef, useState } from "react";
 import { FaLongArrowAltRight, FaPlay } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { bannerImgVariant, bannerTextVariant } from "../shared/anim";
 
 export default function CollectiveCards() {
   const videoRef = useRef(null);
@@ -23,7 +25,13 @@ export default function CollectiveCards() {
         <div className="h-full w-[6px] bg-gradient-to-b from-purple to-[#120d25]  rounded-lg hidden md:block" />
         <div className="flex flex-col items-center gap-5 lg:gap-7 2xl:gap-10">
           {collectiveCard.map((card) => (
-            <div
+            <motion.div
+              variants={bannerTextVariant}
+              initial="initial"
+              whileInView={"enter"}
+              viewport={{
+                once: true,
+              }}
               key={card.heading}
               className="flex items-center gap-5 lg:gap-10 xl:gap-20 font-poppins group"
             >
@@ -49,12 +57,20 @@ export default function CollectiveCards() {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
       {/* right side content */}
-      <div className="flex-1 relative md:h-[400px] lg:min-h-[500px] xl:min-h-[620px] 2xl:min-h-[595px] md:object-cover flex justify-center items-center">
+      <motion.div
+        variants={bannerImgVariant}
+        initial="initial"
+        whileInView={"enter"}
+        viewport={{
+          once: true,
+        }}
+        className="flex-1 relative md:h-[400px] lg:min-h-[500px] xl:min-h-[620px] 2xl:min-h-[595px] md:object-cover flex justify-center items-center"
+      >
         <video
           ref={videoRef}
           onClick={handleVideoPlay}
@@ -73,7 +89,7 @@ export default function CollectiveCards() {
         >
           <FaPlay size={18} className="ml-1" />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
